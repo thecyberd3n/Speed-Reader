@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Dosis'; /* Name your font family */
+    src: url('dosis.ttf'); /* Locate the .ttf file within your directory*/
+}
+  
+
+body {
+    background-color: hsl(0, 0%, 7%);
+    text-align: center;
+}
+  
+h2 {
+    margin: 1em;
+    color: #213ABF;
+    font-family: Dosis;
+    font-size: 4em;
+}
+textarea{
+    font-family: Dosis;
+    resize: none;
+    border: solid;
+    border-radius: 5px;
+    outline: none;
+    background-color: hsl(0, 0%, 23%);
+}
+#start{
+    margin: 1em;
+    font-family: Dosis;
+    font-size: 2em;
+    font-weight: 700;
+    height: 2em;
+    width: 5em;
+    border-radius: 15px;
+    animation-name: unblur;
+    animation-duration: 0.5s;
+}
+#start:hover{
+    animation-name: blur;
+    animation-duration: 0.5s;
+    filter: blur(2px);
+}
+@keyframes blur {
+    from {filter: blur(0px);}
+    to {filter: blur(2px);}
+}
+@keyframes unblur {
+    from {filter: blur(2px);}
+    to {filter: blur(0px);}
+}
