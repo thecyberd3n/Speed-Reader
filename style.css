@@ -47,3 +47,12 @@ textarea{
     from {filter: blur(2px);}
     to {filter: blur(0px);}
 }
+#display{
+    color: #213ABF;
+    font-family: Dosis;
+    font-size: 5em;
+    font-weight: 700;
+    margin-top: 40%;
+    margin-bottom: 40%;
+
+}
